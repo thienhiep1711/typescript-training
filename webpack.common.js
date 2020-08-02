@@ -21,6 +21,11 @@ module.exports = {
         use: 'babel-loader'
       },
       {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        include: [path.resolve(__dirname, 'src')]
+      },
+      {
         test: /\.html$/i,
         loader: 'html-loader',
         options: {
@@ -78,6 +83,7 @@ module.exports = {
     ]
   },
   resolve: {
+    extensions: ['.ts', '.js'],
     alias: {
       lib: path.resolve(__dirname, 'src/assets/js/lib'),
       modules: path.resolve(__dirname, 'src/modules'),

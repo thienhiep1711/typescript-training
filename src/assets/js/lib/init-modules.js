@@ -10,7 +10,7 @@ const factories = {}
  * @param {string} name
  * @return {Function|Object}
  */
-const requireModule = (name) => require('modules/' + name + '/' + name + '.js')
+const requireModule = (name) => require('modules/' + name + '/' + name + '.ts')
 
 /**
  * Handle exception
