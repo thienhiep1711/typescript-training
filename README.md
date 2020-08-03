@@ -1,2 +1,2 @@
-# js-base
-Javascript Base
+# typescript base
+Javascript in to Typescript base
